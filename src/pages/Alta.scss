@@ -1,0 +1,10 @@
+@import "../components/colors";
+.Alta{
+  background-color: $color-background;
+  padding: .1px;
+
+  h1,h2{
+    text-align: center;
+    margin: .2em;
+  }
+}

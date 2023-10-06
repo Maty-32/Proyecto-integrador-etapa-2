@@ -1,0 +1,88 @@
+@import "../components/colors";
+
+footer {
+    background-color: $color-footer;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer {
+    &__sell {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.5em;
+
+        &__shipping {
+            display: flex;
+            justify-content: space-between;
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+
+            div {
+                margin: 1em 3em;
+                text-align: center;
+                font-size: 0.8em;
+
+                .delivery_icon {
+                    width: 4em;
+                    height: 3em;
+                }
+
+                img {
+                    margin: 1em;
+                    width: 3em;
+                    height: 3em;
+                }
+            }
+        }
+
+    }
+
+    &__nav {
+
+        display: flex;
+        justify-content: center;
+        font-size: 1.2em;
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+
+        &__list {
+            display: flex;
+            align-items: center;
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+
+            ul {
+                margin: 0 3em 0 2em;
+                display: flex;
+                list-style-type: none;
+                @media (max-width: 768px) {
+                    flex-direction: column;
+                    text-align: center;
+                }
+
+
+                li {
+
+                    margin: 1em;
+
+                    :hover {
+                        color: $color-rosa;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: $color-card-letras;
+
+                    }
+                }
+            }
+        }
+
+    }
+}

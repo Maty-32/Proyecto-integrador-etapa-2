@@ -1,0 +1,36 @@
+@import "../src/components/colors";
+@import "bootstrap/";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    font-family: 'Marcellus', serif;
+}
+.section-cards {
+    background-color: $color-background;
+    padding: 1em;
+    .section-cards__header{
+        h1{
+            text-align: center;
+        }
+            
+    }
+   &__header{
+    margin: 1em 2em;
+
+    h1{
+        font-size: 2em;
+        
+    }
+   }
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
